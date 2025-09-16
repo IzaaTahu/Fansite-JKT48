@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="album.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="navbar-left">
+        <img src="poto/logo.png" alt="Logo JKT48" class="logo">
+        <span class="site-title">JKT48 Fansite</span>
+    </div>
+    <div class="navbar-menu">
+        <a href="/ilmaan/jkt48.web/home/index.html">Beranda</a>
+        <a href="/ilmaan/jkt48.web/mypage/mypage.html">My Page</a>
+        <a href="/ilmaan/jkt48.web/berita/berita.html">Berita</a>
+        <a href="/ilmaan/jkt48.web/member/member.html">Member</a>
+        <a href="#">Kontak</a>
+    </div>
+</nav>
+
+    <h1>Konser Summer Festival 2023</h1>
+
+  <div class="gallery">
+    <img src="poto/sumfest1.jpeg" alt="Foto 1" onclick="openModal(this)">
+    <img src="poto/sumfest2.jpeg" alt="Foto 2" onclick="openModal(this)">
+    <img src="poto/sumfest3.jpeg" alt="Foto 3" onclick="openModal(this)">
+    <img src="poto/sumfest4.jpeg" alt="Foto 4" onclick="openModal(this)">
+    <img src="poto/sumfest5.jpeg" alt="Foto 5" onclick="openModal(this)">
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <span class="modal-decor">✨ 🎶</span>
+      <img id="modalImg" src="" alt="">
+    </div>
+  </div>
+<script src="album.js"></script>
+</body>
+</html>

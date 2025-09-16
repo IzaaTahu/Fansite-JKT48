@@ -1,0 +1,162 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: #ff80ab;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+}
+
+.navbar {
+    background: #ff80ab;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Bagian kiri navbar */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Judul situs */
+.site-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Menu navigasi */
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.navbar-menu a:hover {
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+}
+
+.page-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background-color: #ffe5e5;
+    border-bottom: 3px solid #ffbaba;
+}
+
+.page-header h1 {
+    font-size: 2em;
+    color: #c1121f;
+}
+
+.page-header p {
+    color: #6b2d2d;
+    margin-top: 8px;
+}
+
+/* Tombol Filter */
+.filter-buttons {
+    text-align: center;
+    padding: 15px;
+}
+
+.filter-btn {
+    background: white;
+    border: 2px solid #e60026;
+    color: #e60026;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    background: #e60026;
+    color: white;
+}
+
+.filter-btn.active {
+    background: #e60026;
+    color: white;
+}
+
+/* Galeri Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: center;
+    height: 250px; /* Tinggi konsisten untuk semua card */
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px; 
+    object-fit: contain; 
+    flex-shrink: 0;
+    
+}
+
+.gallery-item p {
+    padding: 8px;
+    font-size: 14px;
+    background: #fff0f0;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-caption {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #d60036;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}

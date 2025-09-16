@@ -1,0 +1,148 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff5f7;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: #ff80ab;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+.site-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+.navbar-menu a:hover,
+.navbar-menu .active {
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+}
+
+/* Header Berita */
+.news-header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #ffccd5, #ffe6e9);
+  position: relative;
+}
+.news-header h1 {
+  font-size: 2.5em;
+  color: #d63384;
+}
+.news-header p {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Hiasan Love */
+.news-header::after {
+  content: "❤";
+  font-size: 60px;
+  color: #ff80ab;
+  opacity: 0.15;
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+}
+
+/* Daftar Berita */
+.news-list {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Card Berita */
+.news-card {
+  display: flex;
+  gap: 20px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  border: 2px solid #ffb6c1;
+  transition: transform 0.25s ease;
+}
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Gambar Berita */
+.news-card img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Konten Berita */
+.news-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news-content h2 {
+  font-size: 1.4em;
+  color: #d63384;
+}
+.news-date {
+  font-size: 0.9em;
+  color: #888;
+  margin: 5px 0;
+}
+.news-summary {
+  flex: 1;
+  font-size: 1em;
+  margin: 10px 0;
+  color: #444;
+}
+.read-more {
+  color: white;
+  background: #ff80ab;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  align-self: flex-start;
+}
+.read-more:hover {
+  background: #e63946;
+}
+
+/* Footer */
+footer {
+  background-color: #e63946;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}

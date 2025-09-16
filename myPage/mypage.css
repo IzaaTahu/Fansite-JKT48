@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6;
+}
+
+/* Navbar */
+.navbar {
+    background: #ff80ab;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+}
+
+.navbar {
+    background: #ff80ab;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Bagian kiri navbar */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Judul situs */
+.site-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Menu navigasi */
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.navbar-menu a:hover {
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+}
+/* Profil */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ff4d4d;
+}
+
+.edit-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #ffd6d6;
+}
+
+.stat-card h2 {
+  margin: 0;
+  color: #ff4d4d;
+}
+
+.activity {
+  padding: 20px;
+  
+}
+
+.activity-card {
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #ffd6d6;
+  border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.activity-card h3 {
+  margin-top: 0;
+  color: #ff4d4d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  
+  
+}
+
+th {
+  background: #ffe6e6;
+  padding: 8px;
+  text-align: left;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+    text-align: center;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: justify;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+    text-align:right;
+    text-align: center;
+}
+
+.paid {
+  color: green;
+  font-weight: bold;
+}
+
+.status.hadir { color: green; font-weight: bold; }
+.status.tidak { color: red; font-weight: bold; }
+.status.pending { color: orange; font-weight: bold; }

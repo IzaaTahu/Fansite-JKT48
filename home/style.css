@@ -1,0 +1,406 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff5f7;
+  color: #333;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* HEADER / NAVBAR */
+header {
+  background-color: #e63946;
+  padding: 15px 50px;
+  width: 100%;
+}
+
+.navbar {
+  background: #ff80ab;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.site-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-menu {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  display: inline-block;
+}
+
+.navbar-menu a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #ffccd5, #ffe6e9);
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #e63946;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.hero-img { 
+  max-width: 100%; 
+  height: auto; 
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.card-container::before,
+.card-container::after {
+  content: "★";
+  font-size: 60px;
+  color: #ff80ab;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.card-container::before {
+  left: -30px;
+}
+.card-container::after {
+  right: -30px;
+}
+
+.card {
+  display: block;
+  width: 300px;
+  padding: 25px;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  color: #d63384;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 2px solid #ffb6c1;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  background: #fff0f6;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* FOOTER */
+footer {
+  background-color: #e63946;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* CAPTAIN */
+.captain-section {
+  flex: 1;
+  text-align: center;
+}
+
+.captain-frame {
+  border: 5px solid #ffb6c1;
+  padding: 5px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background: white;
+}
+
+.captain-frame img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.captain-quote {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 14px;
+  color: #444;
+  background: #ffe4ec;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* SLIDESHOW */
+.slideshow {
+  position: relative;
+  max-width: 800px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-frame {
+  flex: 0 0 100%;
+  padding: 15px;
+  background: white;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(255, 77, 109, 0.25);
+  border: 6px solid;
+  border-image: linear-gradient(135deg, #ff99b3, #ffe4ec, #ff80ab) 1;
+}
+
+.slide-frame img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.slide-frame::after {
+  content: "🎀";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 20px;
+}
+
+.slide-frame span.decor-star {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 18px;
+  color: #ff80ab;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: pink;
+  transform: rotate(-45deg);
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+}
+
+.dot::before,
+.dot::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: inherit;
+  border-radius: 50%;
+}
+
+.dot::before { top: -6px; left: 0; }
+.dot::after { top: 0; left: 6px; }
+
+.dot.active {
+  background-color: #ff4d6d;
+}
+
+/* SONG */
+.song-of-the-day {
+  text-align: center;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.song-of-the-day h2 {
+  color: #e63946;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.song-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff0f6;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.video-wrapper {
+  border: 4px solid #ff80ab;
+  border-radius: 12px;
+  padding: 5px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.video-wrapper video {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+}
+
+.song-desc {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #444;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* === MEDIA QUERIES === */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container::before,
+  .card-container::after {
+    display: none; /* hilangin hiasan bintang biar gak overflow */
+  }
+}
+
+/* HP */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-menu a {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8em;
+  }
+
+  .hero-text p {
+    font-size: 1em;
+  }
+
+  .features {
+    padding: 20px 10px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .captain-frame img {
+    width: 150px;
+  }
+
+  .song-of-the-day h2 {
+    font-size: 22px;
+  }
+}
