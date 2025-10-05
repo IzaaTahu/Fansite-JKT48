@@ -31,3 +31,4 @@ function createDecoration() {
 
 // Buat elemen baru tiap 300ms
 setInterval(createDecoration, 300);
+

@@ -37,3 +37,4 @@ function resetAutoSlide() {
 
 showSlide(slideIndex);
 startAutoSlide();
+

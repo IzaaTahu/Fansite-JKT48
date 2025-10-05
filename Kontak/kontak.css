@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&display=swap');
+
+:root {
+    --pink-main: #ff6b8b;
+    --pink-light: #ffe6ec;
+    --pink-soft: #ffd9e1;
+    --pink-dark: #e04a6c;
+    --text-dark: #333;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--pink-light);
+    color: var(--text-dark);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+    background: #ff80ab;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.site-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+.navbar-menu a:hover {
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+}
+
+/* ==== INTRO ==== */
+.intro {
+    text-align: center;
+    padding: 70px 20px 40px;
+}
+
+.intro h2 {
+    font-family: 'Pacifico', cursive;
+    color: var(--pink-dark);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.intro span {
+    color: var(--pink-main);
+}
+
+.intro p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* ==== PORTFOLIO ==== */
+.portfolio {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.portfolio h3 {
+    color: var(--pink-dark);
+    margin-bottom: 30px;
+    font-size: 1.6em;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    color: var(--pink-dark);
+    margin-bottom: 5px;
+}
+
+/* ==== CONTACT ==== */
+.contact {
+    background-color: var(--pink-soft);
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 2px solid var(--pink-main);
+}
+
+.contact h3 {
+    color: var(--pink-dark);
+    font-size: 1.5em;
+}
+
+.socials {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.socials a {
+    background-color: var(--pink-main);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background-color: var(--pink-dark);
+}
+
+/* ==== FOOTER ==== */
+footer {
+    background-color: var(--pink-main);
+    color: var(--white);
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ==== RESPONSIVE ADJUSTMENTS ==== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .intro h2 {
+        font-size: 1.8em;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .intro h2 {
+        font-size: 1.6em;
+    }
+
+    .intro p {
+        font-size: 0.95em;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
